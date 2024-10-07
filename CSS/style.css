@@ -1,0 +1,338 @@
+@import url(../partials/footer.css);
+
+
+/*CSS de barra de contactos y carrito*/
+:root {
+    font-family: "Montserrat";
+}
+.borde {
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+/*------------------------------------*/
+/*barra de contactos, usuario y compra*/
+/*------------------------------------*/
+.menu {
+    height: 6vh;
+    background-color: rgb(19, 18, 18);
+    font-family: Arial, Helvetica, sans-serif;
+    /*display flex se aplica a los hijos del contenedor y alinea*/
+    display: flex;
+    /*deja margenes entre los hijos li*/
+    gap: 100px;
+    /*centra el texto(hijo) dentro del contenedor en el eje principal en este caso el horizonatal*/
+    justify-content: center;
+    /*centra el texto(hijo) dentro del contenedor en el eje secundario en este caso el vertical*/
+    align-items: center;
+    color: rgb(255, 72, 0);
+    font-size: 18px;
+       
+}
+/*Oculatr texto de la barra en formato movil*/
+span {
+    display: none;
+    padding-left: 3px;
+}
+/*------------------------------------*/
+/* CSS de la segunda barra de navegación + logo*/
+/*------------------------------------*/
+.logo {
+    width: 100px;
+    margin-left: 4vw;
+}
+.men2 {
+    position: relative;
+    /*para que cuando posicione los textos me tome la posición desde las coordenadas de este*/
+}
+.iconLogoMenu {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hamburguesa i {
+    width: 100px;
+    font-size: 5vh;
+}
+/*color general texto de la barra*/
+.menu2{ 
+        .barra {
+        list-style: none;
+        
+    }}
+/*palabra de inico siempre en naranja*/
+.inicio {
+    color: #fa573a;}
+.barra{
+    color: black;
+}
+/*colocación centrada y en columnas del texto del menu desplegable*/
+.menu2 {
+    li {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    border-bottom: 1px solid black;
+    height: 5vh;}
+}
+/* intento de desplegable
+.menu2{
+    display:none;
+}
+.hamburguesa:hover{
+        display:menu;
+}*/
+a {
+    text-decoration: none;
+    margin-top: 2vh;
+}
+/* Cuando pasa el cursor por el menu cambia de color*/
+
+.menu2 a:hover {
+    color: #fa573a;
+}
+/*Zona principal de la pagina, presentación y acceso a carta*/
+/*Imagen de hamburgeusa de fondo*/
+main .relative {
+    /*se superpone un fondo negro con la imagen*/
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../CSS/image/fondo.jpg);
+    background-blend-mode: multiply;
+    color: white;
+    /*Posición de imagen*/
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+       }
+/*posicion del slogan respecto a la posición relativa*/
+main {.slogan {
+    position: absolute;
+    left: 7%;
+    top: 20%;}
+}
+/*Tipografia, tamaño y posicion titulo 1*/
+h1 {
+    font-family: "Handlee", cursive;
+    font-size: 3.5vh;
+    margin-top: 5vh;
+}
+.relative{
+    /*Tipografia, tamaño y posicion titulo 2*/
+    & h2 {
+    color: #fa573a;
+    font-size: 2vh;
+    margin-top: 2vh;}
+      /*Tipografia, tamaño y posicion parrafo*/
+   & p {
+        font-size: 2vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        }
+}
+  /*boton de leer*/
+.boxred {
+    color:white;
+    background-color: #fa573a;
+    width: 150px;
+    height: 40px;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1.4vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    &i {
+        transition: 1s;
+    }
+}
+
+.boxred:hover i {
+    transform: translateX(5px) scale(1.20);
+}
+.boxred:hover {
+    color: #fa573a;
+    background-color: transparent;
+    border: 1px solid #fa573a;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+/*tamaño del contenedor de la red social*/
+.redsoc {
+    width: 160px;
+    margin-top: 5px;
+    font-size: 30px;
+}
+/*colocar iconos en fila*/
+div .redsoc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*color de icono red social*/
+.fa-facebook{
+    color:white;
+}
+.fa-twitter{
+    color:white;
+}
+.fa-instagram{
+    color:white;
+}
+/*cambio de color y de tamaño al pasar cusor por icono*/
+.fa-facebook:hover {
+    color: #fa573a;
+    font-size: 6vh;
+    cursor: pointer;
+}
+.fa-twitter:hover {
+    color: #fa573a;
+    font-size: 6vh;
+    cursor: pointer;
+}
+.fa-instagram:hover {
+    color: #fa573a;
+    font-size: 6vh;
+    cursor: pointer;
+}
+/*-------------------------*/
+/*Zona principal Articulos*/
+/*-------------------------*/
+
+/*Zona Our services*/
+
+h3 {
+    font-family: "Handlee", cursive;
+    font-size: 3.5vh;
+    position: relative;
+    gap: 2vh;  
+    /*Para colocar el titulo respecto al parrafo*/
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    }
+h3 div{
+    color:#fa573a;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.7vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+p {
+    font-size: 1.7vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.servicioArt article {
+    border-bottom: 1px solid rgb(31, 29, 29);
+}
+/*tamaño de icono y formato*/
+.servicioArt i {
+    color: #fa573a;
+    padding: 2px;
+    margin-top: 2vh;
+    border: 1px solid #fa573a;
+    padding: 10px;
+}
+/*quita el contorno de la flecha de leer*/
+.servicioArt div i {
+   border: none;
+}
+/*Leer más posición y fuinciones*/
+.servicioArt .leer,
+h5 {
+    color: #fa573a;
+    font-weight: bold;
+}
+.nosotrosArt{
+    padding-bottom: 20vh;
+}
+/*Zona About Us*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.imagen {
+    flex: 1;
+    max-width: 40%;
+    margin-left: 100px;
+}
+/* contenedor cuadrado giradoa 10 grados*/
+.cuadrado {
+    border: 3px solid orangered;
+    transform: rotate(10deg);
+    transition: transform 0.3s;
+    width: 100%;
+}
+/*Cuando pasa el raton por la imagen cuadrado se pone con 0 grados*/
+.cuadrado:hover {
+    transform: rotate(0deg);
+}
+.cuadrado img {
+    transform: rotate(-10deg);
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+}
+.cuadrado:hover img {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+.noshade hr {
+    background-color: #fa573a;
+}.title {
+    margin-bottom: 5vh;
+    position: relative;
+}
+/*.line {
+    position: relative;
+}*/
+hr {
+    position: absolute;
+    height: 0.2vh;
+    width: 90px;
+    left: 46%;
+    background-color: #fa573a;
+}
+.x {
+    position: absolute;
+    left:47vw;
+    top: 2vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fa573a;
+}
+/*.title {
+    margin-bottom: 5vh;
+}*/
+.div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.leer {
+    padding-top: 8px;
+    display: flex;
+   
+}
+.leer:hover {
+    cursor: pointer;
+}
+.div i {
+    display: flex;
+    top: 2vh;
+
+}

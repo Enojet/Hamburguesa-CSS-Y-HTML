@@ -1,0 +1,28 @@
+/*Flecha de scrol fija en lateral inferior derecho*/
+.flecha {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #fa573a;
+    width: 10%;
+    font-size: 5vh;
+}
+/*Barra inferior fija en todo el ancho de la pagina*/
+footer {
+    background-color: #21242e;
+    height: 7vh;
+    display: flex; /*Barra inferior fija*/
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+footer p {
+    display: flex;
+    justify-content: start;
+    padding-left: 20vw;
+    font-size: 15px;
+    color:white;
+}

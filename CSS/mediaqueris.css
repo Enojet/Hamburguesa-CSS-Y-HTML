@@ -1,0 +1,114 @@
+@media(min-width:768px) {
+    .menu span {
+
+        /*display flex se aplica a los hijos del contenedor y alinea*/
+        display: flex;
+        /*deja margenes entre los hijos li*/
+        gap: 100px;
+        /*centra el texto(hijo) dentro del contenedor en el eje principal en este caso el horizonatal*/
+        justify-content: center;
+        /*centra el texto(hijo) dentro del contenedor en el eje secundario en este caso el vertical*/
+        align-items: center;
+        color: white;
+    }
+
+    .menu li {
+        display: flex;
+        gap: 2px;
+    }
+
+    .x {
+        top:2vh;
+        left: 46vw;
+    }
+
+}
+
+@media(width>1024px) {
+    .menu2 li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        border-bottom: none;
+
+    }
+
+    .men2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu2 {
+        display: flex;
+        Gap: 2vw;
+
+    }
+
+    .hamburguesa i {
+        display: none;
+    }
+
+    .title {
+        padding-top: 4vh;
+        padding-bottom: 7vh;
+    }
+
+    .servicioArt {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20vw 20vw 20vw;
+
+    }
+
+    .servicioArt article {
+        border-bottom: none;
+        border-left: 1px solid black;
+        padding-left: 10px;
+    }
+
+
+    .imgArt {
+        width: 500px;
+    }
+
+    .nosotrosArt {
+
+        height: 50vh;
+        display: flex;
+        gap: 5vw;
+        align-items: start;
+        flex-direction: row;
+        justify-content: center;
+        border-top: none;
+        padding-bottom: 20vh;
+        margin-left: 15vw;
+        margin-right: 15vw;
+
+    }
+
+    .contenedor {
+        width: 700px;
+        margin-bottom: 10vh;
+    }
+
+   
+    .imagen {
+        display: flex;
+    }
+
+    .history {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10vh;
+        */
+    }
+    h3 div{
+        position:relative;
+    }
+    .x {position: absolute;
+        top:11.5vh;
+        left: 48vw;
+    }
+}
+
